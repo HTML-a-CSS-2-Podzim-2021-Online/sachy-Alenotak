@@ -1,0 +1,47 @@
+@media (max-width: 600px) {
+     }
+
+h1 {
+    text-align: center;
+}
+
+.sachovnice {
+    display: grid;
+    grid-template-columns: repeat(8, 110px);
+    grid-template-rows: repeat(8, 110px);
+    background-image: url(obrazky/sachovnice.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+ 
+img {
+    height: 100px;
+    width: fit-content;
+    border-radius: 15%;
+    margin: 0 10px 0 10px;
+}
+
+strong {
+    font-size: 20px;
+}
+
+.hraci {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.honza {
+    width: calc(50% - 5px) ;
+    height: 100px;
+    display: inline-flex;
+    text-align: left;
+}
+
+.adela {
+    width: calc(50% - 5px) ;
+    height: 100px;
+    display: inline-flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
