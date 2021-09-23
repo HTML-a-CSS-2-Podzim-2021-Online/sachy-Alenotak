@@ -1,24 +1,36 @@
-@media (max-width: 600px) {
-     }
+.strana {
+    max-width: 600px;
+    margin: auto;
+}
+
+p, h1 {
+font-family: sans-serif;
+}
 
 h1 {
     text-align: center;
+    font-size: 40px;
 }
+
+
 
 .sachovnice {
     display: grid;
-    grid-template-columns: repeat(8, 110px);
-    grid-template-rows: repeat(8, 110px);
+    grid-template-areas: 'pet', 'devet', 'devatenact', 'dvacetosm', 'tricetdva';
+    width: 100%;
+    grid-template-columns: repeat(8, 75px);
+    grid-template-rows: repeat(8, 75px);
     background-image: url(obrazky/sachovnice.png);
     background-repeat: no-repeat ;
     background-size: cover;
+    border: 9px rgb(39, 8, 8) solid;
+    border-radius: 10px;
 }
- 
-img {
-    height: 100px;
-    width: fit-content;
-    border-radius: 15%;
-    margin: 0 10px 0 10px;
+
+.pesec-bila, .kun-bila, .pesec-cerna, .strelec-cerna, .vez-cerna, .kral-cerna, .kral-bila {
+    width: 65px;
+    object-fit: cover;
+    padding: 5px;
 }
 
 strong {
@@ -30,18 +42,45 @@ strong {
     margin-bottom: 10px;
 }
 
-.honza {
-    width: calc(50% - 5px) ;
-    height: 100px;
+.adela, .honza {
+    border-radius: 15%;
+    height: 75px;    
+    width: 75px;
+    object-fit: cover;  
+}
+
+.popis {
+    margin: 18px 10px 18px 10px;    
+}
+
+.hrachonza {
+    width: 50% ;
+    height: 75px;
     display: inline-flex;
     text-align: left;
 }
 
-.adela {
-    width: calc(50% - 5px) ;
-    height: 100px;
+.hracadela {
+    width: 50% ;
+    height: 75px;
     display: inline-flex;
     justify-content: flex-end;
     text-align: right;
+}
+
+.vyherce {
+    text-align: center;
+    font-size: 25px;
+}
+
+.tlacitko {
+    text-align: center;
+    color: white;
+    border: 1px black solid;
+    border-radius: 8%;
+    width: 100px;
+    padding: 6px;
+    margin: auto;
+    background-color: rgb(81, 107, 179);
 }
 
