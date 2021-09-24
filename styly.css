@@ -16,22 +16,21 @@ h1 {
 
 .sachovnice {
     display: grid;
-    grid-template-areas: 'pet', 'devet', 'devatenact', 'dvacetosm', 'tricetdva';
     width: 100%;
-    grid-template-columns: repeat(8, 75px);
-    grid-template-rows: repeat(8, 75px);
+    max-width: 582px;
+    grid-template-columns: repeat(8, 72.75px);
+    grid-template-rows: repeat(8, 72.75px);
     background-image: url(obrazky/sachovnice.png);
     background-repeat: no-repeat ;
-    background-size: cover;
+    background-size: 100% 100%;
     border: 9px rgb(39, 8, 8) solid;
     border-radius: 10px;
 }
 
 .pesec-bila, .kun-bila, .pesec-cerna, .strelec-cerna, .vez-cerna, .kral-cerna, .kral-bila {
-    width: 65px;
-    object-fit: cover;
-    padding: 5px;
+    width: 100%;
 }
+
 
 strong {
     font-size: 20px;
@@ -39,6 +38,7 @@ strong {
 
 .hraci {
     display: flex;
+    width: 100%;
     margin-bottom: 10px;
 }
 
