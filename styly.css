@@ -12,10 +12,13 @@ h1 {
     font-size: 40px;
 }
 
-
+.pole img {
+    max-width: 100%;
+}
 
 .sachovnice {
     display: grid;
+    grid-area: auto;
     width: 100%;
     max-width: 582px;
     grid-template-columns: repeat(8, 72.75px);
